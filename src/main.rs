@@ -1,16 +1,14 @@
 mod game;
-use crate::components::basic::*;
 use game::Game;
 
 use glutin_window::GlutinWindow;
-use opengl_graphics::{GlGraphics, OpenGL};
+use opengl_graphics::OpenGL;
 use piston::event_loop::*;
 use piston::input::*;
 use piston::window::WindowSettings;
-use specs::prelude::*;
-use specs::{World, WorldExt};
 
 pub mod components;
+pub mod types;
 
 fn main() {
 	let opengl = OpenGL::V3_2;

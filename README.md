@@ -1,1 +1,1 @@
-it draws red squares.
+it draws moving red squares.
