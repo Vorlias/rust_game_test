@@ -1,1 +1,1 @@
-world_proto
+it draws red squares.

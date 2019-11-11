@@ -39,11 +39,16 @@ impl Game {
 		};
 
 		game.register_entities();
-		game.world
+
+		for n in 1..=10 {
+			game.world
 			.create_entity()
-			.with(Position::zero())
+			.with(Position::new(25.0 * (n as f64), 5.0))
 			.with(Sprite {})
-			.build();
+			.build();	
+		}
+
+
 
 		game
 	}
